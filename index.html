@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ducky :)</title>
+    <link rel="icon" href="ok.ico">
+</head>
+<body>
+<video autoplay loop id="myVideo">
+  <source src="o.mp4" type="video/mp4">
+</video>
+<div class="overlay">
+        
+    </div>
+</body>
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    text-align: center
+}
+p {
+ text-align:center
+}
+</style>
+</body>
+</html>
